@@ -5,6 +5,8 @@
   import pokegeloCliLogo from '$lib/images/pokegelo_cli_logo.png'
   import pangolinyLogo from '$lib/images/pangoliny_logo.png'
   import handBanner from '$lib/images/hand_banner.png'
+  import autistaPic from '$lib/images/LUCAS_NATALINO.jpg'
+  import lindaoPic from '$lib/images/VICTOR_LUIZ_NATALINO.jpg'
 </script>
 
 <main>
@@ -21,7 +23,7 @@
 
     <article id="tec-list">
       <div>
-        <img src={builderBuddyLogo} width="128" alt="builder buddy logo">
+        <img id="builder-buddy" src={builderBuddyLogo} width="128" alt="builder buddy logo">
       </div>
 
       <div>
@@ -33,7 +35,7 @@
       </div>
 
       <div>
-        <img id="pangoliny" src={pangolinyLogo} width="128" alt="pangoliny logo">
+        <img src={pangolinyLogo} width="128" alt="pangoliny logo">
       </div>
     </article>
   </section>
@@ -51,26 +53,28 @@
     <img src={handBanner} alt="div banner">
   </section>
 
-  <section>
-    <h1>QUEM SOMOS?</h1>
-    <article>A URB<span class="text-main">BEE</span> É UMA ORGANIZAÇÃO DE SOLUÇÕES DIGITAIS E GERENCIADORA DA REDE SOCIAL BUILDERBUDDY</article>
+  <section id="about-us">
+    <h2>QUEM SOMOS?</h2>
+    <article>
+      <h3>A URB<span class="color-main">BEE</span> É UMA ORGANIZAÇÃO DE SOLUÇÕES DIGITAIS E GERENCIADORA DA REDE <span class="color-bb-light">SOCIAL</span> <span class="color-bb-dark">BUILDERBUDDY</span></h3>
 
-    <div id="team-pics-row">
-      <div class="team-pic">
-        <img src="" alt="team picture">
-        <h2 class="trailing">GABRIEL SPINOLA</h2>
-      </div>
+      <div id="team-pics-row">
+        <div class="team-pic">
+          <img src={lindaoPic} alt="team member">
+          <h3 class="trailing">GABRIEL SPINOLA</h3>
+        </div>
 
-      <div class="team-pic">
-        <img src="" alt="team picture">
-        <h2 class="trailing">LUCAS VINICIUS</h2>
-      </div>
+        <div class="team-pic">
+          <img src={autistaPic} alt="team member">
+          <h3 class="trailing">LUCAS VINICIUS</h3>
+        </div>
 
-      <div class="team-pic">
-        <img src="" alt="team picture">
-        <h2 class="trailing">VICTOR LUIZ</h2>
+        <div class="team-pic">
+          <img src={lindaoPic} alt="team member">
+          <h3 class="trailing">VICTOR<br>LUIZ</h3>
+        </div>
       </div>
-    </div>
+    </article>
 
     <section>
       <h1>ENTRE EM CONTATO</h1>
@@ -92,111 +96,5 @@
 </main>
 
 <style lang="scss">
-  section {
-    margin: 6.6vh 0;
-  }
-
-  section#intro-banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 64px;
-
-    margin-top: 0;
-
-    width: 100vw;
-    height: 75.5vh;
-    max-height: 75.5vh;
-
-    color: var(--bg);
-    background-color: var(--dark);
-
-    article {
-      height: 100%;
-      width: 60%;
-      display: flex;
-
-      align-items: center;
-
-      font-size: 7rem;
-      line-height: 80px;
-    }
-  }
-
-  section#tec {
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-    justify-content: center;
-    padding: 128px;
-    padding-top: 0;
-
-    h2 {
-      font-size: 4rem;  
-      font-weight: 400;
-    }
-
-    article#tec-list {
-      display: flex;
-      flex-direction: row;
-
-      margin: 0 auto;
-      gap: 4vw;
-
-      div {
-        width: 10vw;
-        height: 21vh;
-      }
-
-      img {
-        margin-top: 15px;
-        width: 132px;
-        height: 132px;
-        border-radius: 32px;
-        box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.10);
-      }
-    }
-  }
-
-  section#builder-buddy-banner {
-    height: 80vh;
-    width: 80.2vw;
-
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4vw;
-    overflow: visible;
-
-    img {
-      width: 512px;
-      height: 512px;
-      border-radius: 32px;
-      box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.10);
-    }
-
-    article {
-      width: 50%;
-
-      h1 {
-        font-size: 12rem;
-        line-height: 115px;
-        overflow: visible;
-        font-weight: 400;
-      }
-
-      p {
-        font-size: 3.8rem;
-        line-height: 35px;
-        overflow: visible;
-        font-weight: 400;
-      }
-    }
-  }
-
-  section#div-banner {
-    margin-top: -6vh;
-  }
+  @import '../styles/landing-page.scss'
 </style>
