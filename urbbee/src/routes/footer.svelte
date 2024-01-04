@@ -31,3 +31,16 @@
     </div>
   </div>
 </footer>
+
+<style lang="scss">
+  footer {
+    display: flex;
+    width: 100vw;
+    padding: 64px 128px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: var(--bg);
+    background-color: var(--dark);
+  }
+</style>
