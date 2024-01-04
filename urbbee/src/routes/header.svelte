@@ -1,7 +1,12 @@
+<script>
+  import logo from "$lib/images/URBBEE_LOGO.png"
+</script>
+
 <header>
   <nav>
     <div id="logo-container">
-      <img src="#" alt="logo">URB<span>BEE</span>
+      <img src={logo} alt="logo" width="102">
+      <h1>URB<span class="color-bg">BEE</span></h1>
     </div>
 
     <div id="links-container">
@@ -23,7 +28,7 @@
     padding: 5px;
  
     nav {
-      --gap: 15%;
+      --gap: 20%;
 
       height: 100%;
       width: 100%;
@@ -38,12 +43,18 @@
       color: var(--bg);
 
       #logo-container {
-        width: 25%;
+        width: 60%;
+        
+        display: inline-flex;
+        align-items: center;
         margin-left: 2vw;
+
+        color: var(--dark);
       }
 
       #links-container {
-        width: calc(80% - var(--gap));
+        width: calc(100% - var(--gap));
+        margin-left: 14vw;
 
         ul {
           width: inherit;
@@ -51,11 +62,14 @@
           display: inline-flex;
           justify-content: space-between;
           gap: 10%;
+
+          list-style: none;
         }
 
         a {
           text-decoration: none;
           color: var(--bg);
+          font-weight: 600;
         }
       }
     }
