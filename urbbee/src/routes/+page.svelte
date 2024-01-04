@@ -38,11 +38,11 @@
   </section>
 
   <section id="builder-buddy-banner">
-    <img src="#" alt="builder buddy logo">
+    <img src={builderBuddyLogo} width="512" alt="builder buddy logo">
 
     <article>
-      <h1>BUILDER BUDDY</h1>
-      <p>a rede social voltada para a divulgação da arquitetura, engenharia e arte urbana.</p>
+      <h1><span class="color-bb-light">BUILDER</span><br><span class="color-bb-dark">BUDDY</span></h1>
+      <p>a rede social voltada para a divulgação da <span class="color-bb-light">arquitetura</span>, <span class="color-bb-dark">engenharia</span> e <span class="color-bb-light">arte urbana.</span></p>
     </article>
   </section>
 
@@ -128,6 +128,7 @@
 
     text-align: center;
     justify-content: center;
+    padding: 128px;
 
     h2 {
       font-size: 4rem;  
@@ -156,6 +157,39 @@
   }
 
   section#builder-buddy-banner {
+    height: 80vh;
+    width: 80.2vw;
 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+    overflow: visible;
+
+    img {
+      width: 512px;
+      height: 512px;
+      border-radius: 32px;
+      box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.10);
+    }
+
+    article {
+      width: 50%;
+
+      h1 {
+        font-size: 12rem;
+        line-height: 115px;
+        overflow: visible;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 3.8rem;
+        line-height: 35px;
+        overflow: visible;
+        font-weight: 400;
+      }
+    }
   }
 </style>

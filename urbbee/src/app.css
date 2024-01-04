@@ -32,6 +32,9 @@
   --bg-dark: #B6BCB5;
   --main: #FCBD27;
   --main-dark: #DD9502;
+
+  --bb-light: rgba(187, 133, 83, 1);
+  --bb-dark: rgba(128, 79, 35, 1);
 }
 
 * {
@@ -49,4 +52,12 @@
 
 .color-bg {
   color: var(--bg);
+}
+
+.color-bb-light {
+  color: var(--bb-light);
+}
+
+.color-bb-dark {
+  color: var(--bb-dark);
 }

@@ -57,7 +57,7 @@
       }
 
       #links-container {
-        width: calc(100% - var(--gap));
+        width: calc(90%);
         margin-left: 14vw;
 
         ul {
