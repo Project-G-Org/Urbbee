@@ -1,10 +1,13 @@
+<script>
+  import bannerOne from '$lib/images/BANNER1.png';
+</script>
+
 <main>
-  <section id="builder-buddy-banner">
-    <img src="#" alt="builder buddy logo">
+  <section id="intro-banner">
+    <img src={bannerOne} width="40%" alt="banner">
 
     <article>
-      <h1>BUILDER BUDDY</h1>
-      <p>a rede social voltada para a divulgação da arquitetura, engenharia e arte urbana.</p>
+      <h1>A URB<span class="color-main">BEE</span> É A SUA MANEIRA DE SOLUCIONAR OS <span class="color-main">SEUS</span> <span class="color-main">PROBLEMAS</span> USANDO O MELHOR DA <span class="color-main">TECNOLOGIA.</span></h1>
     </article>
   </section>
 
@@ -17,6 +20,15 @@
       <img src="" alt="university api logo">
       <img src="" alt="pangoliny logo">
     </div>
+  </section>
+
+  <section id="builder-buddy-banner">
+    <img src="#" alt="builder buddy logo">
+
+    <article>
+      <h1>BUILDER BUDDY</h1>
+      <p>a rede social voltada para a divulgação da arquitetura, engenharia e arte urbana.</p>
+    </article>
   </section>
 
   <section id="div-banner">
@@ -64,9 +76,34 @@
 </main>
 
 <style lang="scss">
-  form {
-    input {
-      color: wheat;
+  section {
+    margin: 6.6vh 0;
+  }
+
+  section#intro-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+
+    margin-top: 0;
+
+    width: 100vw;
+    height: 75.5vh;
+    max-height: 75.5vh;
+
+    color: var(--bg);
+    background-color: var(--dark);
+
+    article {
+      height: 100%;
+      width: 60%;
+      display: flex;
+
+      align-items: center;
+
+      font-size: 7.93rem;
+      line-height: 76px;
     }
   }
 </style>

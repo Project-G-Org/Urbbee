@@ -28,7 +28,7 @@
     padding: 5px;
  
     nav {
-      --gap: 20%;
+      --gap: 14%;
 
       height: 100%;
       width: 100%;
@@ -47,9 +47,13 @@
         
         display: inline-flex;
         align-items: center;
-        margin-left: 2vw;
+        margin-left: 7vw;
 
         color: var(--dark);
+
+        h1 {
+          font-size: 4rem;
+        }
       }
 
       #links-container {
@@ -70,6 +74,7 @@
           text-decoration: none;
           color: var(--bg);
           font-weight: 600;
+          font-size: 2rem;
         }
       }
     }
