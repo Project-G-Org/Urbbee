@@ -24,18 +24,22 @@
     <article id="tec-list">
       <div>
         <img id="builder-buddy" src={builderBuddyLogo} width="128" alt="builder buddy logo">
+        <h3>Builder Buddy</h3>
       </div>
 
       <div>
         <img src={pokegeloCliLogo} width="128" alt="pokegelo cli logo">
+        <h3>PokeGelo CLI</h3>
       </div>
 
       <div>
         <img src={uniApiLogo} width="128" alt="university api logo">
+        <h3>World Uni Api</h3>
       </div>
 
       <div>
         <img src={pangolinyLogo} width="128" alt="pangoliny logo">
+        <h3>Pangoliny</h3>
       </div>
     </article>
   </section>

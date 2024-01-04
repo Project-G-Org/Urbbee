@@ -4,7 +4,7 @@
 
 <header>
   <nav>
-    <div id="logo-container">
+    <div class="logo-container">
       <img src={logo} alt="logo" width="102">
       <h1>URB<span class="color-bg">BEE</span></h1>
     </div>
@@ -41,20 +41,6 @@
       align-items: center;
 
       color: var(--bg);
-
-      #logo-container {
-        width: 60%;
-        
-        display: inline-flex;
-        align-items: center;
-        margin-left: 7vw;
-
-        color: var(--dark);
-
-        h1 {
-          font-size: 4rem;
-        }
-      }
 
       #links-container {
         width: calc(90%);

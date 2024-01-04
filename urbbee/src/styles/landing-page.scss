@@ -5,9 +5,7 @@
   align-items: center;
 }
 
-section {
-  margin: 6.6vh 0;
-}
+section { margin: 6.6vh 0 }
 
 section#intro-banner {
   display: flex;
@@ -57,8 +55,7 @@ section#intro-banner {
 
 section#tec {
   @include flex-center(column);
-  
-  padding: 128px;
+
   padding-top: 0;
   width: 100vw;
 
@@ -73,10 +70,13 @@ section#tec {
     margin: 0 auto;
     gap: 8vw;
     width: 100%;
+    overflow: visible;
 
     div {
-      height: 21vh;
+      height: 22vh;
       overflow: visible;
+      text-align: center;
+      font-size: 2rem;
     }
 
     img {
@@ -96,6 +96,7 @@ section#builder-buddy-banner {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  margin-top: 12vw;
 
   gap: 4vw;
   overflow: visible;
@@ -133,7 +134,6 @@ section#div-banner {
 section#about-us {
   @include flex-center(column);
 
-  padding: 128px;
   padding-top: 0;
   width: 100vw;
 

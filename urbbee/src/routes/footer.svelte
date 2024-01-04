@@ -1,8 +1,11 @@
-<footer>
-  <div id="left">
-    <span>SIGA NOSSAS REDES SOCIAIS</span>
+<script>
+  import logo from "$lib/images/URBBEE_LOGO.png"
+</script>
 
-    ICONS
+<footer>
+  <div class="logo-container">
+    <img src={logo} alt="logo" width="102">
+    <h1>URB<span class="color-bg">BEE</span></h1>
   </div>
 
   <div id="right">
