@@ -1,5 +1,9 @@
 <script>
   import bannerOne from '$lib/images/BANNER1.png';
+  import builderBuddyLogo from '$lib/images/builder_buddy.png'
+  import uniApiLogo from '$lib/images/uni_api_logo.png'
+  import pokegeloCliLogo from '$lib/images/pokegelo_cli_logo.png'
+  import pangolinyLogo from '$lib/images/pangoliny_logo.png'
 </script>
 
 <main>
@@ -11,15 +15,26 @@
     </article>
   </section>
 
-  <section>
-    <h1>NOSSAS TECNOLOGIAS</h1>
+  <section id="tec">
+    <h2>NOSSAS TECNOLOGIAS</h2>
 
-    <div id="tec-row">
-      <img src="" alt="builder buddy logo">
-      <img src="" alt="pokegelo cli logo">
-      <img src="" alt="university api logo">
-      <img src="" alt="pangoliny logo">
-    </div>
+    <article id="tec-list">
+      <div>
+        <img src={builderBuddyLogo} width="128" alt="builder buddy logo">
+      </div>
+
+      <div>
+        <img src={pokegeloCliLogo} width="128" alt="pokegelo cli logo">
+      </div>
+
+      <div>
+        <img src={uniApiLogo} width="128" alt="university api logo">
+      </div>
+
+      <div>
+        <img id="pangoliny" src={pangolinyLogo} width="128" alt="pangoliny logo">
+      </div>
+    </article>
   </section>
 
   <section id="builder-buddy-banner">
@@ -105,5 +120,42 @@
       font-size: 7.93rem;
       line-height: 76px;
     }
+  }
+
+  section#tec {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 4rem;  
+    }
+
+    article#tec-list {
+      display: flex;
+      flex-direction: row;
+
+      margin: 0 auto;
+      gap: 4vw;
+
+      div {
+        width: 10vw;
+        height: 21vh;
+      }
+
+      img {
+        margin-top: 15px;
+        width: 132px;
+        height: 132px;
+        border-radius: 32px;
+        box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.10);
+      }
+    }
+  }
+
+  section#builder-buddy-banner {
+
   }
 </style>
