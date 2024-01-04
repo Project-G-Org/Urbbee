@@ -118,8 +118,8 @@
 
       align-items: center;
 
-      font-size: 7.93rem;
-      line-height: 76px;
+      font-size: 7rem;
+      line-height: 80px;
     }
   }
 
@@ -130,9 +130,11 @@
     text-align: center;
     justify-content: center;
     padding: 128px;
+    padding-top: 0;
 
     h2 {
       font-size: 4rem;  
+      font-weight: 400;
     }
 
     article#tec-list {
