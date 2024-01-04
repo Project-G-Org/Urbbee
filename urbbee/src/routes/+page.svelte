@@ -4,6 +4,7 @@
   import uniApiLogo from '$lib/images/uni_api_logo.png'
   import pokegeloCliLogo from '$lib/images/pokegelo_cli_logo.png'
   import pangolinyLogo from '$lib/images/pangoliny_logo.png'
+  import handBanner from '$lib/images/hand_banner.png'
 </script>
 
 <main>
@@ -47,7 +48,7 @@
   </section>
 
   <section id="div-banner">
-    <img src="" alt="div banner">
+    <img src={handBanner} alt="div banner">
   </section>
 
   <section>
@@ -191,5 +192,9 @@
         font-weight: 400;
       }
     }
+  }
+
+  section#div-banner {
+    margin-top: -6vh;
   }
 </style>
