@@ -11,9 +11,9 @@
 
     <div id="links-container">
       <ul>
-        <li><a href="#">QUEM SOMOS?</a></li>
-        <li><a href="#">NOSSAS TECNOLOGIAS?</a></li>
-        <li><a href="#">SAIBA MAIS?</a></li>
+        <li><a href="#about-us">QUEM SOMOS?</a></li>
+        <li><a href="#tec">NOSSAS TECNOLOGIAS?</a></li>
+        <li><a href="#more">SAIBA MAIS?</a></li>
       </ul>
     </div>
   </nav>
